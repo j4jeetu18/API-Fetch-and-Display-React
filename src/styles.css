@@ -1,0 +1,47 @@
+body{
+    min-width: 1000px;
+    line-height: 30px;
+}
+
+#root{
+    width: 70%;
+    margin: 3% auto;
+    display: flex;
+    justify-content: space-between;
+}
+.tags {
+    margin: 0% 2%;
+    background-color: rgb(231, 229, 229);
+    border-radius: 0.7em;
+    color: rgb(77, 75, 75);
+    padding: 0.7% 3%;
+    cursor: default;
+}
+
+@keyframes top-slide-in {
+    from {top: 100vh;}
+    to {top: 0vh;}
+  }
+
+.posts{
+    position: relative;
+    animation-name: top-slide-in;
+    animation-duration: 0.57s;  
+    animation-fill-mode: forwards;
+}
+
+#allResults,#searchResults{
+    width: 60%;
+}
+#filters {
+    margin-right: 5%;
+    max-width: 400px;
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.activeTag{
+    background-color: rgb(70, 69, 69);
+    color: white;
+}
