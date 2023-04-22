@@ -40,8 +40,7 @@ function App() {
                   <Post data={iterator} key={index} searchByFilter={searchByFilter} />
                 )}
               </div>
-            )
-            }
+            )}
             <Pagination onChange={(event, value) => setActivePage(value)} count={totalPageNumbers} />
           </section>
           :
